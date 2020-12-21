@@ -3,7 +3,7 @@ const client = new Discord.Client()
 
 const config = require('./config.json')
 const command = require('./command.js')
-const token = require('./token.json')
+//const token = require('./token.json')
 
 client.on('ready', () => {
     console.log('Online.')
