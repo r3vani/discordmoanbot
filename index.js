@@ -12,5 +12,5 @@ client.on('ready', () => {
         message.channel.send('lukju gej')
     })
 })
-client.login(token.token)
-//client.login(process.env.D_Token)
+//client.login(token.token)
+client.login(process.env.D_Token)
