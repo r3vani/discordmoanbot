@@ -5,7 +5,6 @@ const { connect } = require('http2')
 const path = require('path')
 
 const config = require('./config.json')
-const token = require('./token.json')
 
 let connection;
 let joinedChannelID = '1';
@@ -58,4 +57,4 @@ client.on('voiceStateUpdate', (oldState, newState) => {
     }
 })
 
-client.login(token.token)
+client.login(process.env.D_Token)
